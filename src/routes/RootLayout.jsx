@@ -9,31 +9,36 @@ export default function RootLayout() {
 	return (
 		<>
 			<Nav />
-			<m.div className='text-left flex gap-3 ml-0 m-16 text-stone-400 font-semibold text-lg'>
-				<h1>Aaron Dorff is</h1>
-				<span className='-translate-y-1 border-b-4 border-stone-700 text-[#82b2aa]'>
-					{location === '/' && (
-						<h1 className='translate-y-1'>a lot of things</h1>
-					)}
+				{/* <m.div
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 2, keyframes: [0, 0.5, 1, 0.5, 0] }}
+					exit={{ opacity: 1 }}
+					className='text-left flex gap-4 ml-0 m-10 mt- text-stone-400 font-semibold text-lg'
+				>
+					<h1>Meet Aaron Dorrf.</h1>
+				</m.div> */}
+				<m.div
+					// initial={{ opacity: 0 }}
+					// animate={{ opacity: 1 }}
+					// transition={{ duration: 2}}
+					// exit={{ opacity: 1 }}
+					className='text-left flex gap-4 ml-0 m-10 mt- text-stone-400 font-semibold text-lg'
+				>
+					<h1>Aaron Dorff is a</h1>
+					<span className='text-indigo-800'>
+						{location === '/' && <h1>lot of things</h1>}
 
-					{location === '/moto' && (
-						<h1 className='translate-y-1'>a Gear Head</h1>
-					)}
+						{location === '/moto' && <h1>Gear Head</h1>}
 
-					{location === '/photo' && (
-						<h1 className='translate-y-1'> a Photographer</h1>
-					)}
+						{location === '/photo' && <h1>Photographer</h1>}
 
-					{location === '/craft' && (
-						<h1 className='translate-y-1'>a Craftsman</h1>
-					)}
+						{location === '/craft' && <h1>Craftsman</h1>}
 
-					{location === '/talent' && <h1 className='translate-y-1'>a Model</h1>}
-				</span>
-			</m.div>
-			<AnimatePresence>
+						{location === '/talent' && <h1>Model</h1>}
+					</span>
+				</m.div>
 				<Outlet />
-			</AnimatePresence>
 		</>
 	)
 }

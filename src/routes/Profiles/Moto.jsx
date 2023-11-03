@@ -1,32 +1,21 @@
 export default function Moto() {
 	return (
-		<section className='mx-auto my-5 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-5'>
+		<section className='mx-auto my-5 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-10'>
 			<div className="rounded-lg col-span-2 row-span-2 bg-cover bg-center bg-[url('/src/assets/IMG_4214.JPG')] text-2xl"></div>
-			<div className='col-span-2 flex flex-col gap-5 text-left text-stone-400'>
-				<h2 className='text-5xl font-semibold text-stone-300'>
-					Moto - UTV - OffRoad
-				</h2>
+			<div className='col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'>
+				<h2 className='text-2xl font-semibold'>Moto - UTV - OffRoad</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus
-					nulla at volutpat diam ut venenatis tellus in metus. Ac turpis egestas
-					integer eget aliquet nibh. Leo in vitae turpis massa sed elementum
-					tempus. Et leo duis ut diam quam nulla porttitor. Duis at consectetur
-					lorem donec massa sapien faucibus. Nulla posuere sollicitudin aliquam
-					ultrices sagittis. Elit ullamcorper dignissim cras tincidunt lobortis
-					feugiat vivamus at augue. Ac turpis egestas maecenas pharetra
-					convallis. Mattis aliquam faucibus purus in massa tempor nec feugiat
-					nisl. Neque convallis a cras semper.
+					Meet Aaron Dorff, the ultimate gearhead with a passion for all things
+					that run on gasoline. Whether he's knee-deep in engine grease or
+					sharing a cold one with some buds, Aaron's genuine enthusiasm for
+					things that go vroom is contagious. No pretense here; he's the guy you
+					want in your crew when you're talking torque and testing limits. 
 				</p>
-				<p>
-					Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Elit at
-					imperdiet dui accumsan sit. Aenean pharetra magna ac placerat
-					vestibulum lectus. Ac orci phasellus egestas tellus rutrum tellus
-					pellentesque eu. Etiam sit amet nisl purus in mollis. Tortor posuere
-					ac ut consequat semper viverra nam. Convallis tellus id interdum velit
-					laoreet id donec ultrices tincidunt. Neque laoreet suspendisse
-					interdum consectetur libero id faucibus nisl.
-				</p>
+				<a href='mailto:aarondorff22@gmail.com'>
+					<button className='bg-indigo-800 text-stone-50 hover:text-indigo-800 hover:bg-stone-50 transition duration-300'>
+						Let's work together
+					</button>
+				</a>
 			</div>
 		</section>
 	)

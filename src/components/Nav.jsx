@@ -1,5 +1,5 @@
 import { HiOutlineHome, HiOutlineMail } from 'react-icons/hi'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { motion as m } from 'framer-motion'
 
 export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
@@ -11,34 +11,28 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
 		})
 	}
 
+	const location = useLocation().pathname
+
 	return (
 		<>
 			<m.header
-				initial={{ translateY: -50 }}
-				animate={{ translateY: 0 }}
+				initial={{ translateY: -100 }}
+				animate={{ translateY: -20 }}
 				transition={{ duration: 1, ease: 'easeInOut' }}
-				className='z-50 bg-stone-900 px-10 py-3 fixed top-0 left-0 w-full max-w-screen-2xl h-12 items-center justify-between text-base md:flex'
+				className='z-50 px-10 py-3 top-0 left-0 w-full max-w-screen-2xl items-center justify-between text-base md:flex'
 			>
 				<Link
 					to='..'
 					className='hidden md:block'
 				>
-					<HiOutlineHome className='animate-fade-in cursor-pointer text-2xl' />
+					<HiOutlineHome className='animate-fade-in cursor-pointer text-2xl ' />
 				</Link>
 
-				<ul className='hidden items-center gap-20 md:flex'>
-					<li className='cursor-pointer'>
-						<Link
-							to='/moto'
-							className='cursor-pointer'
-						>
-							Gearhead
-						</Link>
-					</li>
+				<ul className='  p-2 px-4 rounded-full backdrop-blur-lg backwdrop-opacity-100 items-center gap-20 md:flex'>
 					<li className='cursor-pointer'>
 						<Link
 							to='/photo'
-							className='cursor-pointer'
+							className='cursor-pointer focus:opacity-75 focus:text-indigo-800'
 						>
 							Photographer
 						</Link>
@@ -46,21 +40,32 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
 					<li className='cursor-pointer'>
 						<Link
 							to='/talent'
-							className='cursor-pointer'
+							className='cursor-pointer focus:opacity-75 focus:text-indigo-800'
 						>
 							Talent
 						</Link>
 					</li>
-					<li className='cursor-pointer'>
+					<li className='cursor-pointer '>
 						<Link
 							to='/craft'
-							className='cursor-pointer'
+							className='cursor-pointer  focus:opacity-75 focus:text-indigo-800'
 						>
 							Craftsman
 						</Link>
 					</li>
+					<li className='cursor-pointer '>
+						<Link
+							to='/moto'
+							className='cursor-pointer focus:opacity-75 focus:text-indigo-800'
+						>
+							Gearhead
+						</Link>
+					</li>
 				</ul>
-				<a className='cursor-pointer text-2xl text-stone-400'>
+				<a
+					href='mailto:aarondorff22@gmail.com'
+					className='cursor-pointer text-2xl text-stone-400'
+				>
 					<HiOutlineMail />
 				</a>
 			</m.header>
@@ -69,7 +74,7 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
 				{/* <ThemeToggle /> */}
 
 				<Link to='..'>
-					<HiOutlineHome className='animate-fade-in cursor-pointer text-2xl text-teal-900 dark:text-orange-50' />
+					<HiOutlineHome className='animate-fade-in cursor-pointer text-2xl hover:text-orange-500' />
 				</Link>
 				{/* {isGallery && <HiMenu onClick={menuHandler} className="z-50 text-2xl cursor-pointer text-teal-900 dark:text-orange-50 animate-fade-in"/>} */}
 			</div>

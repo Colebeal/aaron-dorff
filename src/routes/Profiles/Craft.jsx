@@ -1,30 +1,33 @@
 export default function Craft() {
 	return (
-		<section className='mx-auto my-5 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-5'>
+		<section className='mx-auto my-5 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-10'>
 			<div className="col-span-2 rounded-lg row-span-2 bg-cover bg-bottom bg-[url('src/assets/091A1757.JPG')]"></div>
-			<div className='col-span-2 flex flex-col gap-5 text-left text-stone-400'>
-				<h2 className='text-5xl font-semibold text-stone-300'>Woodworking</h2>
+			<div className='col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'>
+				<h2 className='text-2xl font-semibold'>Woodworking</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus
-					nulla at volutpat diam ut venenatis tellus in metus. Ac turpis egestas
-					integer eget aliquet nibh. Leo in vitae turpis massa sed elementum
-					tempus. Et leo duis ut diam quam nulla porttitor. Duis at consectetur
-					lorem donec massa sapien faucibus. Nulla posuere sollicitudin aliquam
-					ultrices sagittis. Elit ullamcorper dignissim cras tincidunt lobortis
-					feugiat vivamus at augue. Ac turpis egestas maecenas pharetra
-					convallis. Mattis aliquam faucibus purus in massa tempor nec feugiat
-					nisl. Neque convallis a cras semper.
+					Meet Aaron Dorff, the craftsman. Based in Encinitas,
+					California. Aaron has always had a passion for creativity and working
+					with his hands, and he's found a perfect outlet for that passion in
+					the world of woodworking. He spends most of his time in his garage,
+					where he transforms raw materials into beautiful pieces of furniture
+					and décor that reflect his unique style and love of the outdoors.
 				</p>
 				<p>
-					Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Elit at
-					imperdiet dui accumsan sit. Aenean pharetra magna ac placerat
-					vestibulum lectus. Ac orci phasellus egestas tellus rutrum tellus
-					pellentesque eu. Etiam sit amet nisl purus in mollis. Tortor posuere
-					ac ut consequat semper viverra nam. Convallis tellus id interdum velit
-					laoreet id donec ultrices tincidunt. Neque laoreet suspendisse
-					interdum consectetur libero id faucibus nisl.
+					He's constantly inspired by the awe of nature, and he
+					works to bring a piece of that beauty into every piece he creates.
+					Whether he's building a custom dining table for a client or creating a
+					beautiful piece of wall art, Aaron's work is characterized by his
+					attention to detail and his love of natural materials. He believes
+					that the things we surround ourselves with should reflect our values
+					and our connection to the world around us, and he strives to create
+					pieces that will last a lifetime and bring joy and comfort to those
+					who use them.
 				</p>
+				<a href='mailto:aarondorff22@gmail.com?subject=Custom order request'>
+					<button className='bg-indigo-800 text-stone-50 hover:text-indigo-800 hover:bg-stone-50 transition duration-300'>
+						Custom orders
+					</button>
+				</a>
 			</div>
 		</section>
 	)
