@@ -41,7 +41,7 @@ export default function Talent() {
 					animate={{ opacity: 0.7 }}
 					transition={{
 						duration: 2,
-						delay: 5,
+						delay: .5,
 					}}
 					className='absolute -bottom-6 right-0'
 				>

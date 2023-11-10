@@ -16,13 +16,12 @@ export default function Photo() {
 				<div className='col-span-2 flex flex-col gap-5 text-left text-stone-500 items-start'>
 					<h2 className='text-2xl font-semibold'>Action Shots</h2>
 					<p>
-						Meet Aaron Dorff, a photographer based in the vibrant
-						coastal town of Encinitas. With a deep appreciation for the outdoors
-						and a keen eye for capturing moments with intention, Aaron's lens
-						tells stories of nature, adventure, and the human spirit. His
-						passion for the outdoors seamlessly integrates with his work,
-						creating visually compelling narratives that resonate with
-						authenticity.
+						Meet Aaron Dorff, a photographer based in the vibrant coastal town
+						of Encinitas. With a deep appreciation for the outdoors and a keen
+						eye for capturing moments with intention, Aaron's lens tells stories
+						of nature, adventure, and the human spirit. His passion for the
+						outdoors seamlessly integrates with his work, creating visually
+						compelling narratives that resonate with authenticity.
 					</p>
 					<p>
 						Aaron's portfolio is as diverse as the landscapes he explores. From
@@ -44,7 +43,7 @@ export default function Photo() {
 					animate={{ opacity: 0.7 }}
 					transition={{
 						duration: 2,
-						delay: 5,
+						delay: 0.5,
 					}}
 					className='absolute -bottom-6 right-0'
 				>
