@@ -19,7 +19,7 @@ export default function Craft() {
 	return (
 		<>
 			<section className='relative mx-auto my-5 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-10'>
-				<div className="col-span-2 rounded-lg row-span-2 bg-cover bg-bottom bg-[url('src/assets/091A1757.JPG')]"></div>
+				<div className="col-span-2 rounded-lg row-span-2 bg-cover bg-bottom bg-[url('/091A1757.JPG')]"></div>
 				<div className='col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'>
 					<h2 className='text-2xl font-semibold'>Woodworking</h2>
 					<p>

@@ -60,10 +60,30 @@ export default function ProductModal({
 
 						<div className='rounded-lg bg-white row-span-2 col-span-2 text-stone-800 text-xl p-5'>
 							{productType == 'table' && (
-								<h2 className='text-stone-700 text-3xl my-5'>Tables</h2>
+								<>
+									<h2 className='text-stone-700 text-3xl my-5'>Tables</h2>
+									<div className='p-5 col-span-2'>
+										<a href='mailto:aarondorff22@gmail.com?subject=Custom order request'>
+											<button className='bg-indigo-800 text-stone-50 hover:text-indigo-800 hover:bg-stone-50 transition duration-300'>
+												Request a quote
+											</button>
+										</a>
+									</div>
+								</>
 							)}
 							{productType == 'cut' && (
-								<h2 className='text-stone-700 text-3xl my-5'>Cutting Boards</h2>
+								<>
+									<h2 className='text-stone-700 text-3xl my-5'>
+										Cutting Boards
+									</h2>
+									<div className='p-5 col-span-2'>
+										<a href='mailto:aarondorff22@gmail.com?subject=Custom order request'>
+											<button className='bg-indigo-800 text-stone-50 hover:text-indigo-800 hover:bg-stone-50 transition duration-300'>
+												Request a quote
+											</button>
+										</a>
+									</div>
+								</>
 							)}
 							{productType == 'bed' && (
 								<h2 className='text-stone-700 text-3xl my-5'>Bed Frames</h2>
