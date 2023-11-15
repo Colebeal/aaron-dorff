@@ -9,7 +9,7 @@ export default function Talent() {
 	return (
 		<>
 			<section className='relative mx-auto my-5 md:mb-48 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-10'>
-				<div className="rounded-lg col-span-2 row-span-2 bg-cover bg-center bg-[url('/src/assets/IMG_4222.JPG')]"></div>
+				<div className="rounded-lg col-span-2 row-span-2 bg-cover bg-center bg-[url('/image/IMG_4222.JPG')]"></div>
 				<div className='col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'>
 					<h2 className='text-2xl font-semibold'>On Camera</h2>
 					<p>
