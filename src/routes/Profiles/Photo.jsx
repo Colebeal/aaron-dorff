@@ -12,7 +12,7 @@ export default function Photo() {
 				exit={{ opacity: 0 }}
 				className='relative mx-auto my-5 md:mb-48 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-10'
 			>
-				<div className="rounded-lg col-span-2 row-span-2 bg-cover bg-bottom bg-[url('/src/assets/l1120123.jpeg')]"></div>
+				<div className="rounded-lg col-span-2 row-span-2 bg-cover bg-bottom bg-[url('/image/L1120123.jpeg')]"></div>
 				<div className='col-span-2 flex flex-col gap-5 text-left text-stone-500 items-start'>
 					<h2 className='text-2xl font-semibold'>Action Shots</h2>
 					<p>
