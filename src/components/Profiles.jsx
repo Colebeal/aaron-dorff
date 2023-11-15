@@ -19,7 +19,7 @@ export default function Profiles() {
 			></Link>
 			<Link
 				to='/moto'
-				className="cursor-pointer rounded-lg row-span-2 bg-cover bg-bottom hover:backdrop-brightness-50 bg-[url('/src/assets/IMG_4214.JPG')]"
+				className="cursor-pointer rounded-lg row-span-2 bg-cover bg-bottom hover:backdrop-brightness-50 bg-[url('/src/assets/IMG_4214.JPG')] "
 			></Link>
 		</section>
 	)
