@@ -1,16 +1,59 @@
 import { BsArrowDownCircleFill } from 'react-icons/bs'
 import { motion as m } from 'framer-motion'
 
-import Gallery from "../../components/Gallery"
+import Gallery from '../../components/Gallery'
 
+const container = {
+	show: {
+		transition: {
+			staggerChildren: 0.2,
+		},
+	},
+	exit: {
+		transition: {
+			staggerChildren: 0.2,
+		},
+	},
+}
 
+const item = {
+	hidden: { opacity: 0, translateY: 25 },
+	show: {
+		opacity: 1,
+		translateY: 0,
+		transition: {
+			duration: 1,
+			ease: 'easeInOut',
+		},
+	},
+	exit: {
+		opacity: 0,
+		translateY: -25,
+		transition: {
+			duration: 0.5,
+			ease: 'easeInOut',
+		},
+	},
+}
 
 export default function Talent() {
 	return (
 		<>
-			<section className='relative mx-auto my-5 md:mb-48 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-10'>
-				<div className="rounded-lg col-span-2 row-span-2 bg-cover bg-center bg-[url('/image/IMG_4222.JPG')]"></div>
-				<div className='col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'>
+			<m.section
+				variants={container}
+				initial='hidden'
+				animate='show'
+				exit='exit'
+				className='relative mx-auto my-5 md:mb-48 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-10'
+			>
+				<m.div
+					variants={item}
+					className="rounded-lg col-span-2 row-span-2 bg-cover bg-center bg-[url('/image/IMG_4222.JPG')]"
+				></m.div>
+				<m.div
+					variants={item}
+					className='col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'
+				>
 					<h2 className='text-5xl text-indigo-700 opacity-70'>On Camera</h2>
 					<p>
 						Meet Aaron Dorff, a genuinely talented and easygoing individual with
@@ -35,7 +78,7 @@ export default function Talent() {
 							Let's work together
 						</button>
 					</a>
-				</div>
+				</m.div>
 				<m.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 0.7 }}
@@ -47,7 +90,7 @@ export default function Talent() {
 				>
 					<BsArrowDownCircleFill className='text-3xl text-orange-500 animate-bounce' />
 				</m.div>
-			</section>
+			</m.section>
 			<Gallery />
 		</>
 	)

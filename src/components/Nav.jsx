@@ -18,7 +18,7 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
 			<m.header
 				initial={{ translateY: -100 }}
 				animate={{ translateY: -20 }}
-				transition={{ duration: 1, ease: 'easeInOut' }}
+				transition={{ duration: 1, delay: 1 }}
 				className='z-50 px-10 py-3 top-0 left-0 w-full max-w-screen-2xl items-center justify-between text-base md:flex'
 			>
 				<Link
@@ -28,7 +28,7 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
 					<HiOutlineHome className='animate-fade-in cursor-pointer text-2xl ' />
 				</Link>
 
-				<ul className='  p-2 px-4 rounded-full backdrop-blur-lg backwdrop-opacity-100 items-center gap-20 md:flex'>
+				<ul className='p-2 px-4 rounded-full items-center gap-20 md:flex'>
 					<li className='cursor-pointer'>
 						<Link
 							to='/photo'

@@ -1,5 +1,5 @@
 import { BsArrowDownCircleFill } from 'react-icons/bs'
-import { motion as m } from 'framer-motion'
+import { delay, motion as m } from 'framer-motion'
 import { useState } from 'react'
 
 import ProductModal from '../../components/ProductModal'
@@ -7,6 +7,7 @@ import ProductModal from '../../components/ProductModal'
 export default function Craft() {
 	const [modalStatus, setModalStatus] = useState(false)
 	const [productType, setProductType] = useState('')
+	
 	const modalStatusHandler = (product) => {
 		modalStatus ? setModalStatus(false) : setModalStatus(true)
 		if (product !== productType) {
@@ -14,13 +15,56 @@ export default function Craft() {
 		}
 	}
 
-	console.log(productType)
+		const container = {
+			show: {
+				transition: {
+					staggerChildren: 0.2,
+				},
+			},
+			exit: {
+				transition: {
+					staggerChildren: 0.2,
+				},
+			},
+		}
+
+		const item = {
+			hidden: { opacity: 0, translateY: 25 },
+			show: {
+				opacity: 1,
+				translateY: 0,
+				transition: {
+					duration: 1,
+					ease: 'easeInOut',
+				},
+			},
+			exit: {
+				opacity: 0,
+				translateY: -25,
+				transition: {
+					duration: 0.5,
+					ease: 'easeInOut',
+				},
+			},
+		}
 
 	return (
 		<>
-			<section className='relative mx-auto my-5 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-10'>
-				<div className="col-span-2 rounded-lg row-span-2 bg-cover bg-bottom bg-[url('/image/091A1757.JPG')]"></div>
-				<div className='col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'>
+			<m.section
+				variants={container}
+				initial='hidden'
+				animate='show'
+				exit='exit'
+				className='relative mx-auto my-5 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-10'
+			>
+				<m.div
+					variants={item}
+					className="col-span-2 rounded-lg row-span-2 bg-cover bg-bottom bg-[url('/image/091A1757.JPG')]"
+				></m.div>
+				<m.div
+					variants={item}
+					className='col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'
+				>
 					<h2 className='text-5xl text-indigo-700 opacity-70'>Woodworking</h2>
 					<p>
 						Meet Aaron Dorff, the craftsman. Based in Encinitas, California.
@@ -48,17 +92,14 @@ export default function Craft() {
 					</a>
 					<m.div
 						initial={{ opacity: 0 }}
-						animate={{ opacity: 0.7 }}
-						transition={{
-							duration: 2,
-							delay: 0.5,
-						}}
+						animate={{ opacity: 1, transition:{delay: 2} }}
+						exit={{ opacity: 0 }}
 						className='absolute -bottom-6 right-0'
 					>
 						<BsArrowDownCircleFill className='text-3xl text-orange-500 animate-bounce' />
 					</m.div>
-				</div>
-			</section>
+				</m.div>
+			</m.section>
 			<section className='m-10 mt-48'>
 				<h2 className='text-5xl text-indigo-700 opacity-70'>Past Projects</h2>
 				<div className='relative p-10 grid gap-4 grid-cols-5 grid-rows-4 min-h-[700px]'>
