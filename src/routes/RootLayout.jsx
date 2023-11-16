@@ -1,6 +1,6 @@
 import Nav from '../components/Nav'
 import Loader from '../components/Loader'
-import Title from '../components/title'
+import Title from '../components/Title.jsx'
 import Photo from './Profiles/Photo.jsx'
 import Moto from './Profiles/Moto.jsx'
 import Craft from './Profiles/Craft.jsx'
