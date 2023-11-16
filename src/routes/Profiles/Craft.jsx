@@ -21,7 +21,7 @@ export default function Craft() {
 			<section className='relative mx-auto my-5 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-10'>
 				<div className="col-span-2 rounded-lg row-span-2 bg-cover bg-bottom bg-[url('/image/091A1757.JPG')]"></div>
 				<div className='col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'>
-					<h2 className='text-2xl font-semibold'>Woodworking</h2>
+					<h2 className='text-5xl text-indigo-700 opacity-70'>Woodworking</h2>
 					<p>
 						Meet Aaron Dorff, the craftsman. Based in Encinitas, California.
 						Aaron has always had a passion for creativity and working with his
@@ -60,8 +60,8 @@ export default function Craft() {
 				</div>
 			</section>
 			<section className='m-10 mt-48'>
-				<h2 className='text-stone-500 text-2xl font-semibold'>Past Projects</h2>
-				<div className='relative my-5 p-10 grid gap-4  grid-cols-5 grid-rows-4 min-h-[700px]'>
+				<h2 className='text-5xl text-indigo-700 opacity-70'>Past Projects</h2>
+				<div className='relative p-10 grid gap-4 grid-cols-5 grid-rows-4 min-h-[700px]'>
 					<ProductModal
 						modalStatus={modalStatus}
 						modalStatusHandler={modalStatusHandler}

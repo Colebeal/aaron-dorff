@@ -44,25 +44,25 @@ export default function Gallery() {
 			{location === '/talent' && (
 				<div className='grid grid-cols-4 gap-5'>
 					<img
-						src='src/assets/IMG_4215.JPG'
+						src='/image/IMG_4215.JPG'
 						alt=''
 					/>
 					<img
-						src='src/assets/IMG_4219.JPG'
+						src='/image/IMG_4219.JPG'
 						alt=''
 						className='col-span-2 self-center'
 					/>
 					<img
-						src='src/assets/IMG_4214.JPG'
+						src='/image/IMG_4214.JPG'
 						alt=''
 					/>
 					<img
-						src='src/assets/IMG_4226.JPG'
+						src='/image/IMG_4226.JPG'
 						alt=''
 						className='col-span-2'
 					/>
 					<img
-						src='src/assets/IMG_4212.JPG'
+						src='/image/IMG_4212.JPG'
 						alt=''
 						className='col-span-2'
 					/>

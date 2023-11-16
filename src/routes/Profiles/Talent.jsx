@@ -11,7 +11,7 @@ export default function Talent() {
 			<section className='relative mx-auto my-5 md:mb-48 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-10'>
 				<div className="rounded-lg col-span-2 row-span-2 bg-cover bg-center bg-[url('/image/IMG_4222.JPG')]"></div>
 				<div className='col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'>
-					<h2 className='text-2xl font-semibold'>On Camera</h2>
+					<h2 className='text-5xl text-indigo-700 opacity-70'>On Camera</h2>
 					<p>
 						Meet Aaron Dorff, a genuinely talented and easygoing individual with
 						a natural knack for riding motorcycles and surfing. Whether he's
@@ -41,7 +41,7 @@ export default function Talent() {
 					animate={{ opacity: 0.7 }}
 					transition={{
 						duration: 2,
-						delay: .5,
+						delay: 0.5,
 					}}
 					className='absolute -bottom-6 right-0'
 				>

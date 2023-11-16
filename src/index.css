@@ -3,13 +3,23 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: 'Chido';
-	src: url(/src/fonts/Chido.otf) format('opentype');
+	font-family: 'Crimbo';
+	src: url(/src/fonts/CRIMBOVINTAGE.otf) format('opentype');
 }
 
 @font-face {
 	font-family: 'Fabulous';
-	src: url(/src/fonts/AcylicalHand-Thick.ttf) format('opentype');
+	src: url(/src/fonts/AcylicalHand-Thick.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Vintage';
+	src: url(/src/fonts/VintageRovery.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Romantic';
+	src: url(/src/fonts/SundayRomantic-Regular.otf) format('opentype');
 }
 
 :root {
@@ -46,15 +56,16 @@ body {
 }
 
 h1 {
-	font-family: 'Chido' ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'crimbo' ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 2.2em;
 	line-height: 1.1;
 }
 
-h1, h2, h3{
-		font-family: 'Fabulous', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+h2, h3{
+		font-family: 'vintage', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-weight: 600;
 }
+
 
 button {
 	border-radius: 8px;

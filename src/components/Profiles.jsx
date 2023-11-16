@@ -9,13 +9,13 @@ export default function Profiles() {
 				to='/photo'
 				className="cursor-pointer rounded-lg row-span-2 bg-cover bg-bottom hover:backdrop-brightness-50 bg-[url('/image/L1120123.jpeg')]"
 			></Link>
+				<Link
+					to='/craft'
+					className="cursor-pointer rounded-lg row-span-2 bg-cover bg-bottom hover:backdrop-brightness-50 bg-[url('/image/091A1757.JPG')]"
+				></Link>
 			<Link
 				to='/talent'
 				className="cursor-pointer rounded-lg row-span-2 bg-cover bg-bottom hover:backdrop-brightness-50 bg-[url('/image/IMG_4222.JPG')]"
-			></Link>
-			<Link
-				to='/craft'
-				className="cursor-pointer rounded-lg row-span-2 bg-cover bg-bottom hover:backdrop-brightness-50 bg-[url('/image/091A1757.JPG')]"
 			></Link>
 			<Link
 				to='/moto'

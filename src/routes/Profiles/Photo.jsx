@@ -14,7 +14,7 @@ export default function Photo() {
 			>
 				<div className="rounded-lg col-span-2 row-span-2 bg-cover bg-bottom bg-[url('/image/L1120123.jpeg')]"></div>
 				<div className='col-span-2 flex flex-col gap-5 text-left text-stone-500 items-start'>
-					<h2 className='text-2xl font-semibold'>Action Shots</h2>
+					<h2 className='text-5xl text-indigo-700 opacity-70'>Action Shots</h2>
 					<p>
 						Meet Aaron Dorff, a photographer based in the vibrant coastal town
 						of Encinitas. With a deep appreciation for the outdoors and a keen

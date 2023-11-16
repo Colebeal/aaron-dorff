@@ -39,18 +39,18 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
 					</li>
 					<li className='cursor-pointer'>
 						<Link
-							to='/talent'
-							className='cursor-pointer focus:opacity-75 focus:text-indigo-800'
-						>
-							Talent
-						</Link>
-					</li>
-					<li className='cursor-pointer '>
-						<Link
 							to='/craft'
 							className='cursor-pointer  focus:opacity-75 focus:text-indigo-800'
 						>
 							Craftsman
+						</Link>
+					</li>
+					<li className='cursor-pointer'>
+						<Link
+							to='/talent'
+							className='cursor-pointer focus:opacity-75 focus:text-indigo-800'
+						>
+							Talent
 						</Link>
 					</li>
 					<li className='cursor-pointer '>

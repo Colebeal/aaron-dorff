@@ -23,17 +23,17 @@ export default function RootLayout() {
 					// animate={{ opacity: 1 }}
 					// transition={{ duration: 2}}
 					// exit={{ opacity: 1 }}
-					className='text-left flex gap-4 ml-0 m-10 mt- text-stone-400 font-semibold text-lg'
+					className='text-left flex items-baseline gap-7 ml-0 m-10 mt- text-stone-400 font-semibold text-3xl tracking-tightest'
 				>
-					<h1>Aaron Dorff is a</h1>
-					<span className='text-indigo-800'>
-						{location === '/' && <h1>lot of things</h1>}
+					<h1>AARON DORFF IS A</h1>
+					<span className='text-orange-600 opacity-70 text-5xl'>
+						{location === '/' && <h1 className=''>lot of things</h1>}
 
 						{location === '/moto' && <h1>Gear Head</h1>}
 
 						{location === '/photo' && <h1>Photographer</h1>}
 
-						{location === '/craft' && <h1>Craftsman</h1>}
+						{location === '/craft' && <h1>CRAFTSMAN</h1>}
 
 						{location === '/talent' && <h1>Model</h1>}
 					</span>
