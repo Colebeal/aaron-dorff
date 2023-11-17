@@ -21,7 +21,7 @@ export default function Profiles() {
 				opacity: 1,
 				translateY: 0,
 				transition: {
-					duration: 1,
+					duration: .5,
 					ease: 'easeInOut',
 				},
 			},
@@ -47,42 +47,64 @@ export default function Profiles() {
 			<m.div
 				key='photoProfile'
 				variants={item}
-				className='flex row-span-2 bg-cover bg-bottom hover:backdrop-brightness-50 '
+				className='flex row-span-2'
 			>
 				<Link
 					to='/photo'
 					className="w-full grow cursor-pointer bg-[url('/image/L1120123.jpeg')] bg-cover bg-bottom rounded-lg"
-				></Link>
+				>
+					<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<h3 className='text-stone-50 text-3xl whitespace-nowrap'>
+							Photographer
+						</h3>
+					</div>
+				</Link>
 			</m.div>
 			<m.div
 				key='craftProfile'
 				variants={item}
-				className='flex row-span-2 bg-cover bg-bottom hover:backdrop-brightness-50 '
+				className='flex row-span-2'
 			>
 				<Link
 					to='/craft'
 					className="w-full grow cursor-pointer bg-[url('/image/091A1757.JPG')] bg-cover bg-bottom rounded-lg"
-				></Link>
+				>
+					<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<h3 className='text-stone-50 text-3xl whitespace-nowrap'>
+							Craftsman
+						</h3>
+					</div>
+				</Link>
 			</m.div>
 			<m.div
 				key='talentProfile'
 				variants={item}
-				className='flex row-span-2 bg-cover bg-bottom hover:backdrop-brightness-50 '
+				className='flex row-span-2'
 			>
 				<Link
 					to='/talent'
 					className="w-full grow cursor-pointer bg-[url('/image/IMG_4222.JPG')] bg-cover bg-bottom rounded-lg"
-				></Link>
+				>
+					<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<h3 className='text-stone-50 text-3xl whitespace-nowrap'>Model</h3>
+					</div>
+				</Link>
 			</m.div>
 			<m.div
 				key='motoProfile'
 				variants={item}
-				className='flex row-span-2 bg-cover bg-bottom hover:bg-black '
+				className='flex row-span-2 '
 			>
 				<Link
 					to='/moto'
 					className="w-full grow cursor-pointer bg-[url('/image/IMG_4214.JPG')] bg-cover bg-bottom rounded-lg hover:bg-black"
-				></Link>
+				>
+					<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<h3 className='text-stone-50 text-3xl whitespace-nowrap'>
+							GearHead
+						</h3>
+					</div>
+				</Link>
 			</m.div>
 		</m.section>
 	)
