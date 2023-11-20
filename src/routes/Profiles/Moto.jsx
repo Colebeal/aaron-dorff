@@ -44,7 +44,7 @@ export default function Moto() {
 		>
 			<m.div
 				variants={item}
-				className="grow h-[500px] w-full rounded-lg md:col-span-2 md:row-span-2 bg-cover bg-center bg-[url('/image/IMG_4214.JPG')] text-2xl"
+				className="grow h-[400px] w-full rounded-lg md:col-span-2 md:row-span-2 bg-cover bg-center bg-[url('/image/IMG_4214.JPG')] text-2xl"
 			></m.div>
 			<m.div
 				variants={item}

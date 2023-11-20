@@ -23,7 +23,7 @@ export default function RootLayout() {
 			) : (
 				<>
 					<Nav />
-					<main className='m-auto mt-12'>
+					<main className='m-auto mt-6 md:mt-12'>
 						<Title
 							location={location}
 							pathname={pathname}

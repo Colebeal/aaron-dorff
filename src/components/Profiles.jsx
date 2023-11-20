@@ -42,7 +42,7 @@ export default function Profiles() {
 			initial='hidden'
 			animate='show'
 			exit='exit'
-			className='my-5 grid-cols-2 xl:grid-cols-4 grid grid-rows-2 h-[500px] xl:h-[500px] gap-5 text-left'
+			className='my-5 grid-cols-2 xl:grid-cols-4 grid grid-rows-2 h-[400px] xl:h-[500px] gap-5 text-left'
 		>
 			<m.div
 				key='photoProfile'
@@ -53,7 +53,7 @@ export default function Profiles() {
 					to='/photo'
 					className="w-full grow cursor-pointer bg-[url('/image/L1120123.jpeg')] bg-cover bg-bottom rounded-lg"
 				>
-					<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+					<div className='p-5 rounded-lg hidden lg:flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 						<h3 className='text-stone-50 text-3xl whitespace-nowrap'>
 							Photographer
 						</h3>
@@ -69,7 +69,7 @@ export default function Profiles() {
 					to='/craft'
 					className="w-full grow cursor-pointer bg-[url('/image/091A1757.JPG')] bg-cover bg-bottom rounded-lg"
 				>
-					<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+					<div className='p-5 rounded-lg hidden lg:flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 						<h3 className='text-stone-50 lg:text-3xl whitespace-nowrap'>
 							Craftsman
 						</h3>
@@ -85,7 +85,7 @@ export default function Profiles() {
 					to='/talent'
 					className="w-full grow cursor-pointer bg-[url('/image/IMG_4222.JPG')] bg-cover bg-bottom rounded-lg"
 				>
-					<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+					<div className='p-5 rounded-lg hidden lg:flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 						<h3 className='text-stone-50 text-3xl whitespace-nowrap'>Model</h3>
 					</div>
 				</Link>
@@ -99,7 +99,7 @@ export default function Profiles() {
 					to='/moto'
 					className="w-full grow cursor-pointer bg-[url('/image/IMG_4214.JPG')] bg-cover bg-bottom rounded-lg hover:bg-black"
 				>
-					<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+					<div className='p-5 rounded-lg hidden lg:flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 						<h3 className='text-stone-50 text-3xl whitespace-nowrap'>
 							GearHead
 						</h3>

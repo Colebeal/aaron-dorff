@@ -48,7 +48,7 @@ export default function Photo() {
 			>
 				<m.div
 					variants={item}
-					className="grow h-[500px] w-full rounded-lg col-span-4 xl:col-span-2 xl:row-span-2 bg-cover bg-bottom bg-[url('/image/L1120123.jpeg')]"
+					className="grow h-[400px] w-full rounded-lg col-span-4 xl:col-span-2 xl:row-span-2 bg-cover bg-bottom bg-[url('/image/L1120123.jpeg')]"
 				></m.div>
 				<m.div
 					variants={item}
