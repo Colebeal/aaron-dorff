@@ -43,9 +43,9 @@ a {
 	text-decoration: inherit;
 	transition: ease-in 0.15s;
 }
-a:hover {
+/* a:hover {
 	color: #3730a3;
-}
+} */
 
 body {
 	margin: 0;
