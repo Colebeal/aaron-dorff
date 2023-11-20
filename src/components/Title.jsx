@@ -2,13 +2,13 @@ import { motion as m, AnimatePresence } from 'framer-motion'
 
 export default function Title({location, pathname}) {
 	return (
-		<m.div className='text-left flex items-baseline gap-7 text-stone-400 font-semibold text-3xl tracking-tightest'>
+		<m.div className='mb-20 lg:mb-0 text-left flex flex-col lg:flex-row xl:items-baseline xl:gap-7 text-stone-400 xl:text-3xl tracking-tightest'>
 			<h1 className='relative'>AARON DORFF IS A</h1>
-			<span className='text-orange-600 opacity-70 text-5xl'>
+			<span className='relative text-orange-600 opacity-70 text-2xl lg:text-5xl'>
 				<AnimatePresence mode='wait'>
 					{pathname === '/' && (
 						<m.h1
-							className='absolute'
+							className='absolute top-20 lg:top-auto whitespace-nowrap '
 							key='base'
 							initial={{ opacity: 0, translateY: -65 }}
 							animate={{ opacity: 1, translateY: -85 }}
@@ -22,7 +22,7 @@ export default function Title({location, pathname}) {
 					{pathname === '/moto' && (
 						<m.h1
 							key='moto'
-							className='absolute'
+							className='absolute top-20 lg:top-auto whitespace-nowrap'
 							initial={{ opacity: 0, translateY: -65 }}
 							animate={{ opacity: 1, translateY: -85 }}
 							transition={{ duration: 0.5 }}
@@ -35,7 +35,7 @@ export default function Title({location, pathname}) {
 					{pathname === '/photo' && (
 						<m.h1
 							key='photo'
-							className='absolute'
+							className='absolute top-20 lg:top-auto'
 							initial={{ opacity: 0, translateY: -65 }}
 							animate={{ opacity: 1, translateY: -85 }}
 							transition={{ duration: 0.5 }}
@@ -48,7 +48,7 @@ export default function Title({location, pathname}) {
 					{pathname === '/craft' && (
 						<m.h1
 							key='craft'
-							className='absolute'
+							className='absolute top-20 lg:top-auto'
 							initial={{ opacity: 0, translateY: -65 }}
 							animate={{ opacity: 1, translateY: -85 }}
 							transition={{ duration: 0.5 }}
@@ -61,7 +61,7 @@ export default function Title({location, pathname}) {
 					{pathname === '/talent' && (
 						<m.h1
 							key='talent'
-							className='absolute'
+							className='absolute top-20 lg:top-auto'
 							initial={{ opacity: 0, translateY: -65 }}
 							animate={{ opacity: 1, translateY: -85 }}
 							transition={{ duration: 0.5 }}

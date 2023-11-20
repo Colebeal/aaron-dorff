@@ -4,7 +4,6 @@ import { BsArrowDownCircleFill } from 'react-icons/bs'
 import Gallery from '../../components/Gallery'
 
 export default function Photo() {
-	
 	const container = {
 		show: {
 			transition: {
@@ -37,7 +36,7 @@ export default function Photo() {
 			},
 		},
 	}
-	
+
 	return (
 		<>
 			<m.section
@@ -45,17 +44,19 @@ export default function Photo() {
 				initial='hidden'
 				animate='show'
 				exit='exit'
-				className='relative mx-auto my-5 md:mb-48 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-10'
+				className='relative mx-auto my-5 lg:mb-48 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 xl:max-w-[1000px] xl:h-[500px] gap-10'
 			>
 				<m.div
 					variants={item}
-					className="rounded-lg col-span-2 row-span-2 bg-cover bg-bottom bg-[url('/image/L1120123.jpeg')]"
+					className="grow h-[500px] w-full rounded-lg col-span-4 xl:col-span-2 xl:row-span-2 bg-cover bg-bottom bg-[url('/image/L1120123.jpeg')]"
 				></m.div>
 				<m.div
 					variants={item}
-					className='col-span-2 flex flex-col gap-5 text-left text-stone-500 items-start'
+					className='col-span-4 xl:col-span-2 flex flex-col gap-5 text-left text-stone-500 items-start'
 				>
-					<h2 className='text-5xl text-indigo-700 opacity-70'>Action Shots</h2>
+					<h2 className='text-3xl xl:text-5xl text-indigo-700 opacity-70 whitespace-nowrap'>
+						Action Shots
+					</h2>
 					<p>
 						Meet Aaron Dorff, a photographer based in the vibrant coastal town
 						of Encinitas. With a deep appreciation for the outdoors and a keen
@@ -73,7 +74,7 @@ export default function Photo() {
 						the power of intentional design, both in the natural world and in
 						the crafted visuals he produces.
 					</p>
-					<a href='mailto:aarondorff22@gmail.com'>
+					<a href="mailto:aarondorff22@gmail.com?subject=Let's plan a shoot!">
 						<button className='bg-indigo-800 text-stone-50 hover:text-indigo-800 hover:bg-stone-50 transition duration-300'>
 							Let's plan a shoot
 						</button>
@@ -83,7 +84,7 @@ export default function Photo() {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1, transition: { delay: 2 } }}
 					exit={{ opacity: 0 }}
-					className='absolute -bottom-6 right-0'
+					className='hidden md:block absolute -bottom-6 right-0'
 				>
 					<BsArrowDownCircleFill className='text-3xl text-orange-500 animate-bounce' />
 				</m.div>

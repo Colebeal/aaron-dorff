@@ -7,7 +7,7 @@ export default function Gallery() {
 	return (
 		<>
 			{location === '/photo' && (
-				<div className='grid grid-cols-3 gap-5'>
+				<div className='mt-24 grid lg:grid-cols-3 gap-5'>
 					<div className='flex flex-col gap-5'>
 						{photoCol1.map((image) => (
 							<img
@@ -42,7 +42,7 @@ export default function Gallery() {
 			)}
 
 			{location === '/talent' && (
-				<div className='grid grid-cols-4 gap-5'>
+				<div className='my-20 grid md:grid-cols-4 gap-5'>
 					<img
 						src='/image/IMG_4215.JPG'
 						alt=''
@@ -50,7 +50,7 @@ export default function Gallery() {
 					<img
 						src='/image/IMG_4219.JPG'
 						alt=''
-						className='col-span-2 self-center'
+						className='md:col-span-2 self-center'
 					/>
 					<img
 						src='/image/IMG_4214.JPG'
@@ -59,12 +59,12 @@ export default function Gallery() {
 					<img
 						src='/image/IMG_4226.JPG'
 						alt=''
-						className='col-span-2'
+						className='md:col-span-2'
 					/>
 					<img
 						src='/image/IMG_4212.JPG'
 						alt=''
-						className='col-span-2'
+						className='md:col-span-2'
 					/>
 				</div>
 			)}

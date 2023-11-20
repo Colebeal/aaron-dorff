@@ -55,17 +55,19 @@ export default function Craft() {
 				initial='hidden'
 				animate='show'
 				exit='exit'
-				className='relative mx-auto my-5 grid-cols-4 grid grid-rows-2 max-w-[1000px] h-[500px] gap-10'
+				className='relative xl:mx-auto my-5 pb-5 flex flex-col md:grid grid-rows-4 xl:grid-cols-4 xl:grid-rows-2 xl:max-w-[1000px] xl:h-[500px] gap-10'
 			>
 				<m.div
 					variants={item}
-					className="col-span-2 rounded-lg row-span-2 bg-cover bg-bottom bg-[url('/image/091A1757.JPG')]"
+					className="rounded-lg grow h-[500px] w-full xl:col-span-2 xl:row-span-2 bg-cover bg-bottom bg-[url('/image/091A1757.JPG')]"
 				></m.div>
 				<m.div
 					variants={item}
-					className='col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'
+					className='col-span-4 xl:col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'
 				>
-					<h2 className='text-5xl text-indigo-700 opacity-70'>Woodworking</h2>
+					<h2 className='text-3xl xl:text-5xl text-indigo-700 opacity-70'>
+						Woodworking
+					</h2>
 					<p>
 						Meet Aaron Dorff, the craftsman. Based in Encinitas, California.
 						Aaron has always had a passion for creativity and working with his
@@ -92,15 +94,15 @@ export default function Craft() {
 					</a>
 					<m.div
 						initial={{ opacity: 0 }}
-						animate={{ opacity: 1, transition:{delay: 2} }}
+						animate={{ opacity: 1, transition: { delay: 2 } }}
 						exit={{ opacity: 0 }}
 						className='absolute -bottom-6 right-0'
 					>
-						<BsArrowDownCircleFill className='text-3xl text-orange-500 animate-bounce' />
+						<BsArrowDownCircleFill className='hidden md:block text-3xl text-orange-500 animate-bounce' />
 					</m.div>
 				</m.div>
 			</m.section>
-			<section className='m-10 mt-48'>
+			<section className='hidden md:block m-10 mt-48'>
 				<h2 className='text-5xl text-indigo-700 opacity-70'>Past Projects</h2>
 				<div className='relative p-10 grid gap-4 grid-cols-5 grid-rows-4 min-h-[700px]'>
 					<ProductModal
