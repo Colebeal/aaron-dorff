@@ -44,11 +44,11 @@ export default function Photo() {
 				initial='hidden'
 				animate='show'
 				exit='exit'
-				className='relative mx-auto my-5 lg:mb-48 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 xl:max-w-[1000px] xl:h-[500px] gap-10'
+				className='relative mx-auto my-5 lg:mb-48 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 xl:max-w-[1000px] xl:h-[500px] 2xl:h-[600px] gap-10'
 			>
 				<m.div
 					variants={item}
-					className="grow h-[400px] md:h-[500px] w-full rounded-lg col-span-4 xl:col-span-2 xl:row-span-2 bg-cover bg-bottom bg-[url('/image/L1120123.jpeg')]"
+					className="grow h-[400px] md:h-[500px] 2xl:h-[600px] w-full rounded-lg col-span-4 xl:col-span-2 xl:row-span-2 bg-cover bg-bottom bg-[url('/image/L1120123.JPG')] lg:bg-[url('/image/L1120123.jpeg')]"
 				></m.div>
 				<m.div
 					variants={item}
@@ -84,7 +84,7 @@ export default function Photo() {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1, transition: { delay: 2 } }}
 					exit={{ opacity: 0 }}
-					className='hidden md:block absolute -bottom-6 right-0'
+					className='hidden lg:block absolute -bottom-6 right-0'
 				>
 					<BsArrowDownCircleFill className='text-3xl text-orange-500 animate-bounce' />
 				</m.div>

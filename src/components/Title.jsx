@@ -2,9 +2,9 @@ import { motion as m, AnimatePresence } from 'framer-motion'
 
 export default function Title({location, pathname}) {
 	return (
-		<m.div className='mb-20 lg:mb-0 text-left flex flex-col lg:flex-row xl:items-baseline xl:gap-7 text-stone-400 xl:text-3xl tracking-tightest'>
-			<h1 className='relative'>AARON DORFF IS A</h1>
-			<span className='relative text-orange-600 opacity-70 text-2xl lg:text-5xl'>
+		<m.div className='mb-20 2xl:mb-24 lg:mb-0 text-left flex flex-col lg:flex-row xl:items-baseline xl:gap-7 text-stone-400 xl:text-3xl tracking-tightest'>
+			<h1 className='relative 2xl:translate-y-6'>AARON DORFF IS A</h1>
+			<span className='relative text-orange-600 opacity-70 text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl'>
 				<AnimatePresence mode='wait'>
 					{pathname === '/' && (
 						<m.h1

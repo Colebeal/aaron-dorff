@@ -55,15 +55,15 @@ export default function Craft() {
 				initial='hidden'
 				animate='show'
 				exit='exit'
-				className='relative xl:mx-auto my-5 pb-5 flex flex-col md:grid grid-rows-4 xl:grid-cols-4 xl:grid-rows-2 xl:max-w-[1000px] xl:h-[500px] gap-10'
+				className='relative xl:mx-auto my-5 pb-5 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 xl:max-w-[1000px] lg:h-[500px] 2xl:h-[600px] gap-10'
 			>
 				<m.div
 					variants={item}
-					className="rounded-lg grow h-[400px] md:h-[500px] w-full xl:col-span-2 xl:row-span-2 bg-cover bg-bottom bg-[url('/image/091A1757.JPG')]"
+					className="rounded-lg grow h-[400px] md:h-[500px] 2xl:h-[600px] w-full md:col-span-2 md:row-span-2 bg-cover bg-bottom bg-[url('/image/091A1757.JPG')]"
 				></m.div>
 				<m.div
 					variants={item}
-					className='col-span-4 xl:col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'
+					className='md:col-span-2 md:row-span-2 flex flex-col items-start gap-5 text-left text-stone-500'
 				>
 					<h2 className='text-3xl xl:text-5xl text-indigo-700 opacity-70'>
 						Woodworking
@@ -98,7 +98,7 @@ export default function Craft() {
 						exit={{ opacity: 0 }}
 						className='absolute -bottom-6 right-0'
 					>
-						<BsArrowDownCircleFill className='hidden md:block text-3xl text-orange-500 animate-bounce' />
+						<BsArrowDownCircleFill className='hidden ls:block text-3xl text-orange-500 animate-bounce' />
 					</m.div>
 				</m.div>
 			</m.section>

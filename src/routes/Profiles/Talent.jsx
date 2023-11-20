@@ -44,17 +44,19 @@ export default function Talent() {
 				initial='hidden'
 				animate='show'
 				exit='exit'
-				className='relative mx-auto my-5 md:mb-48 md:grid-cols-4 flex flex-col md:grid md:grid-rows-2 max-w-[1000px] md:h-[500px] gap-10'
+				className='relative mx-auto my-5 md:mb-48 md:grid-cols-4 flex flex-col md:grid md:grid-rows-2 max-w-[1000px] md:h-[500px] 2xl:h-[600px] gap-10'
 			>
 				<m.div
 					variants={item}
-					className="grow h-[400px] md:h-[500px] w-full rounded-lg col-span-2 row-span-2 bg-cover bg-center bg-[url('/image/IMG_4222.JPG')]"
+					className="grow h-[400px] md:h-[500px] 2xl:h-[600px] w-full rounded-lg col-span-2 row-span-2 bg-cover bg-center bg-[url('/image/IMG_4222.JPG')]"
 				></m.div>
 				<m.div
 					variants={item}
 					className='col-span-2 flex flex-col items-start gap-5 text-left text-stone-500'
 				>
-					<h2 className='text-3xl md:text-5xl text-indigo-700 opacity-70'>On Camera</h2>
+					<h2 className='text-3xl md:text-5xl text-indigo-700 opacity-70'>
+						On Camera
+					</h2>
 					<p>
 						Meet Aaron Dorff, a genuinely talented and easygoing individual with
 						a natural knack for riding motorcycles and surfing. Whether he's
@@ -73,7 +75,7 @@ export default function Talent() {
 						Dorff is your guy, ready to bring a touch of genuine charm to your
 						next venture.
 					</p>
-					<a href="mailto:aarondorff22@gmail.com?subject=On Camera Opportunity">
+					<a href='mailto:aarondorff22@gmail.com?subject=On Camera Opportunity'>
 						<button className='bg-indigo-800 text-stone-50 hover:text-indigo-800 hover:bg-stone-50 transition duration-300'>
 							Let's work together
 						</button>
@@ -86,7 +88,7 @@ export default function Talent() {
 						duration: 2,
 						delay: 0.5,
 					}}
-					className='hidden md:block absolute -bottom-6 right-0'
+					className='hidden lg:block absolute -bottom-6 right-0'
 				>
 					<BsArrowDownCircleFill className='text-3xl text-orange-500 animate-bounce' />
 				</m.div>

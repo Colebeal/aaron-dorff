@@ -42,7 +42,7 @@ export default function Profiles() {
 			initial='hidden'
 			animate='show'
 			exit='exit'
-			className='my-5 grid-cols-2 xl:grid-cols-3 grid grid-rows-2 h-[400px] xl:h-[500px] gap-5 text-left'
+			className='my-5 2xl:my-0 grid-cols-2 lg:grid-cols-3 grid grid-rows-2 h-[400px] md:h-[800px] lg:h-[500px] 2xl:h-[600px] gap-5 text-left'
 		>
 			<m.div
 				key='photoProfile'
