@@ -57,14 +57,14 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
 							Talent
 						</Link>
 					</li>
-					<li className='cursor-pointer '>
+					{/* <li className='cursor-pointer '>
 						<Link
 							to='/moto'
 							className='cursor-pointer focus:opacity-75 focus:text-indigo-800'
 						>
 							Gearhead
 						</Link>
-					</li>
+					</li> */}
 				</ul>
 				<a
 					href='mailto:aarondorff22@gmail.com'
@@ -111,14 +111,14 @@ export default function Nav({ servicesRef, aboutRef, porfolioRef }) {
 							Talent
 						</Link>
 					</li>
-					<li className='cursor-pointer '>
+					{/* <li className='cursor-pointer '>
 						<Link
 							to='/moto'
 							className='cursor-pointer focus:opacity-75 focus:text-indigo-800'
 						>
 							Gearhead
 						</Link>
-					</li>
+					</li> */}
 				</ul>
 				<a
 					href='mailto:aarondorff22@gmail.com'

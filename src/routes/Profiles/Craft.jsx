@@ -59,7 +59,7 @@ export default function Craft() {
 			>
 				<m.div
 					variants={item}
-					className="rounded-lg grow h-[400px] w-full xl:col-span-2 xl:row-span-2 bg-cover bg-bottom bg-[url('/image/091A1757.JPG')]"
+					className="rounded-lg grow h-[400px] md:h-[500px] w-full xl:col-span-2 xl:row-span-2 bg-cover bg-bottom bg-[url('/image/091A1757.JPG')]"
 				></m.div>
 				<m.div
 					variants={item}

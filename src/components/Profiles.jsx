@@ -42,16 +42,16 @@ export default function Profiles() {
 			initial='hidden'
 			animate='show'
 			exit='exit'
-			className='my-5 grid-cols-2 xl:grid-cols-4 grid grid-rows-2 h-[400px] xl:h-[500px] gap-5 text-left'
+			className='my-5 grid-cols-2 xl:grid-cols-3 grid grid-rows-2 h-[400px] xl:h-[500px] gap-5 text-left'
 		>
 			<m.div
 				key='photoProfile'
 				variants={item}
-				className='flex xl:row-span-2'
+				className='flex col-span-2 lg:col-span-1 xl:row-span-2'
 			>
 				<Link
 					to='/photo'
-					className="w-full grow cursor-pointer bg-[url('/image/L1120123.jpeg')] bg-cover bg-bottom rounded-lg"
+					className="w-full grow cursor-pointer bg-[url('/image/L1120123.JPG')] lg:bg-[url('/image/L1120123.jpeg')] bg-cover bg-bottom rounded-lg"
 				>
 					<div className='p-5 rounded-lg hidden lg:flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 						<h3 className='text-stone-50 text-3xl whitespace-nowrap'>
@@ -79,18 +79,18 @@ export default function Profiles() {
 			<m.div
 				key='talentProfile'
 				variants={item}
-				className='flex row-span-2'
+				className='flex xl:row-span-2'
 			>
 				<Link
 					to='/talent'
-					className="w-full grow cursor-pointer bg-[url('/image/IMG_4222.JPG')] bg-cover bg-bottom rounded-lg"
+					className="w-full grow cursor-pointer bg-[url('/image/IMG_4222.JPG')] bg-cover bg-center rounded-lg"
 				>
 					<div className='p-5 rounded-lg hidden lg:flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
-						<h3 className='text-stone-50 text-3xl whitespace-nowrap'>Model</h3>
+						<h3 className='text-stone-50 text-3xl whitespace-nowrap'>Talent</h3>
 					</div>
 				</Link>
 			</m.div>
-			<m.div
+			{/* <m.div
 				key='motoProfile'
 				variants={item}
 				className='flex row-span-2 '
@@ -105,7 +105,7 @@ export default function Profiles() {
 						</h3>
 					</div>
 				</Link>
-			</m.div>
+			</m.div> */}
 		</m.section>
 	)
 }

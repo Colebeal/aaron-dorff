@@ -48,7 +48,7 @@ export default function Talent() {
 			>
 				<m.div
 					variants={item}
-					className="grow h-[400px] w-full rounded-lg col-span-2 row-span-2 bg-cover bg-center bg-[url('/image/IMG_4222.JPG')]"
+					className="grow h-[400px] md:h-[500px] w-full rounded-lg col-span-2 row-span-2 bg-cover bg-center bg-[url('/image/IMG_4222.JPG')]"
 				></m.div>
 				<m.div
 					variants={item}
