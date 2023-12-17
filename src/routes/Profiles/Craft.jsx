@@ -55,11 +55,11 @@ export default function Craft() {
 				initial='hidden'
 				animate='show'
 				exit='exit'
-				className='relative xl:mx-auto my-5 pb-5 flex flex-col md:grid md:grid-cols-4 md:grid-rows-2 xl:max-w-[1000px] lg:h-[500px] 2xl:h-[600px] gap-10'
+				className='relative xl:mx-auto my-5 pb-5 flex flex-col xl:grid xl:grid-cols-4 xl:grid-rows-2 xl:max-w-[1000px] md:h-[1000px] 2xl:h-[600px] gap-10'
 			>
 				<m.div
 					variants={item}
-					className="rounded-lg grow h-[400px] md:h-[500px] 2xl:h-[600px] w-full md:col-span-2 md:row-span-2 bg-cover bg-bottom bg-[url('/image/091A1757.JPG')]"
+					className="rounded-lg grow h-[400px] xl:h-[500px] 2xl:h-[600px] w-full xl:col-span-2 xl:row-span-2 bg-cover bg-bottom md:bg-center xl:bg-bottom bg-[url('/image/091A1757.JPG')]"
 				></m.div>
 				<m.div
 					variants={item}
@@ -98,56 +98,52 @@ export default function Craft() {
 						exit={{ opacity: 0 }}
 						className='absolute -bottom-6 right-0'
 					>
-						<BsArrowDownCircleFill className='hidden ls:block text-3xl text-orange-500 animate-bounce' />
+						<BsArrowDownCircleFill className='hidden lg:block text-3xl text-orange-500 animate-bounce' />
 					</m.div>
 				</m.div>
 			</m.section>
-			<section className='hidden md:block m-10 mt-48'>
-				<h2 className='text-5xl text-indigo-700 opacity-70'>Past Projects</h2>
-				<div className='relative p-10 grid gap-4 grid-cols-5 grid-rows-4 min-h-[700px]'>
-					<ProductModal
-						modalStatus={modalStatus}
-						modalStatusHandler={modalStatusHandler}
-						productType={productType}
-						setProductType={setProductType}
-					/>
+			<section className='md:m-10 xl:mt-48 min-h-[100svh]'>
+				<h2 className='text-3xl mb-5 md:text-5xl text-indigo-700 opacity-70 text-left md:text-center'>
+					Past Projects
+				</h2>
+				<div className='relative py-5 lg:p-10 grid gap-4 grid-cols-2 xl:grid-cols-5 xl:grid-rows-4 min-h-[90svh]'>
 					<div
-						className="cursor-pointer rounded-lg bg-cover bg-[url('/image/Dorff-Table-07.jpg')] col-span-2 row-span-2"
+						className="cursor-pointer rounded-lg bg-cover bg-center bg-[url('/image/Dorff-Table-07.jpg')] xl:col-span-2 xl:row-span-2"
 						onClick={() => modalStatusHandler('table')}
 					>
-						<div className='p-5 rounded-lg flex justify-center items-center w-full h-full opacity-0 hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<div className='p-5 rounded-lg flex justify-center items-center w-full h-full opacity-100 bg-slate-800 xl:bg-transparent bg-opacity-70 xl:opacity-0 hover:opacity-100 xl:hover:bg-slate-800 hover:xl:bg-opacity-90 transition duration-200'>
 							<h3 className='text-stone-50 text-4xl'>Tables</h3>
 						</div>
 					</div>
 					<div
 						onClick={() => modalStatusHandler('cut')}
-						className="cursor-pointer rounded-lg bg-cover bg-[url('/image/Dorff-Board.jpg')] row-span-2"
+						className="cursor-pointer rounded-lg bg-cover bg-[url('/image/Dorff-Board.jpg')] xl:row-span-2"
 					>
-						<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<div className='p-5 rounded-lg flex justify-center items-center xl:opacity-0 w-full h-full opacity-100 bg-slate-800 xl:bg-transparent bg-opacity-70 hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 							<h3 className='text-stone-50 text-2xl p-3'>Cutting Boards</h3>
 						</div>
 					</div>
 					<div
 						onClick={() => modalStatusHandler('bed')}
-						className="cursor-pointer rounded-lg bg-cover bg-bottom bg-[url('/image/Dorff-Craft-14.jpg')] col-span-2 row-span-2 col-start-4 row-start-3 "
+						className="cursor-pointer rounded-lg bg-cover bg-bottom bg-[url('/image/Dorff-Craft-14.jpg')] xl:col-span-2 xl:row-span-2 xl:col-start-4 xl:row-start-3 "
 					>
-						<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<div className='p-5 rounded-lg flex justify-center items-center opacity-100  bg-slate-800 xl:bg-transparent bg-opacity-70 xl:opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 							<h3 className='text-stone-50 text-4xl'>Bed Frames</h3>
 						</div>
 					</div>
 					<div
 						onClick={() => modalStatusHandler('cut')}
-						className="cursor-pointer rounded-lg bg-cover bg-[url('/image/Dorff-Craft-03.jpg')]"
+						className="hidden xl:block cursor-pointer rounded-lg bg-cover bg-[url('/image/Dorff-Craft-03.jpg')]"
 					>
-						<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<div className='p-5 rounded-lg flex justify-center items-center opacity-100 bg-slate-800 xl:bg-transparent bg-opacity-70 xl:opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 							<h3 className=' text-stone-50 text-2xl p-3'>Cutting Boards</h3>
 						</div>
 					</div>
 					<div
 						onClick={() => modalStatusHandler('shelf')}
-						className="cursor-pointer rounded-lg bg-cover bg-bottom bg-[url('/image/Dorff-Craft-04.jpg')] row-span-2"
+						className="hidden xl:block cursor-pointer rounded-lg bg-cover bg-bottom bg-[url('/image/Dorff-Craft-04.jpg')] xl:row-span-2"
 					>
-						<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<div className='p-5 rounded-lg flex justify-center items-center opacity-100 bg-slate-800 xl:bg-transparent bg-opacity-70 xl:opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 							<h3 className='text-stone-50 text-2xl'>Shelves</h3>
 						</div>
 					</div>
@@ -155,23 +151,23 @@ export default function Craft() {
 						onClick={() => modalStatusHandler('shelf')}
 						className="cursor-pointer rounded-lg bg-cover bg-[url('/image/Dorff-Craft-05.jpg')]"
 					>
-						<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<div className='p-5 rounded-lg flex justify-center items-center opacity-100 bg-slate-800 xl:bg-transparent bg-opacity-70 xl:opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 							<h3 className='text-stone-50 text-2xl'>Shelves</h3>
 						</div>
 					</div>
 					<div
 						onClick={() => modalStatusHandler('record')}
-						className="cursor-pointer rounded-lg bg-cover bg-bottom bg-[url('/image/Dorff-Craft-06.jpg')] row-span-2"
+						className="cursor-pointer rounded-lg bg-cover bg-bottom bg-[url('/image/Dorff-Craft-06.jpg')] xl:row-span-2"
 					>
-						<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<div className='p-5 rounded-lg flex justify-center items-center opacity-100 bg-slate-800 xl:bg-transparent bg-opacity-70 xl:opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 							<h3 className='text-stone-50 text-2xl'>Record Holders</h3>
 						</div>
 					</div>
 					<div
 						onClick={() => modalStatusHandler('shelf')}
-						className="cursor-pointer rounded-lg bg-cover bg-center bg-[url('/image/Dorff-Craft-08.jpg')] row-span-2"
+						className="hidden xl:block cursor-pointer rounded-lg bg-cover bg-center bg-[url('/image/Dorff-Craft-08.jpg')] xl:row-span-2"
 					>
-						<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<div className='p-5 rounded-lg flex justify-center items-center opacity-100 bg-slate-800 xl:bg-transparent bg-opacity-70 xl:opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 							<h3 className='text-stone-50 text-2xl'>Shelves</h3>
 						</div>
 					</div>
@@ -179,7 +175,7 @@ export default function Craft() {
 						onClick={() => modalStatusHandler('build')}
 						className="cursor-pointer rounded-lg bg-cover bg-center bg-[url('/image/Dorff-Craft-09.jpg')]"
 					>
-						<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<div className='p-5 rounded-lg flex justify-center items-center opacity-100 bg-slate-800 xl:bg-transparent bg-opacity-70 xl:opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 							<h3 className='text-stone-50 text-2xl whitespace-nowrap'>
 								Build-outs
 							</h3>
@@ -187,14 +183,20 @@ export default function Craft() {
 					</div>
 					<div
 						onClick={() => modalStatusHandler('build')}
-						className="cursor-pointer rounded-lg bg-cover bg-[url('/image/Dorff-Craft-12.jpg')]"
+						className="hidden xl:block cursor-pointer rounded-lg bg-cover bg-[url('/image/Dorff-Craft-12.jpg')]"
 					>
-						<div className='p-5 rounded-lg flex justify-center items-center opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
+						<div className='p-5 rounded-lg flex justify-center items-center opacity-100 bg-slate-800 md:bg-transparent bg-opacity-70 xl:opacity-0 w-full h-full hover:opacity-100 hover:bg-slate-800 hover:bg-opacity-90 transition duration-200'>
 							<h3 className='text-stone-50 text-2xl whitespace-nowrap'>
 								Build-outs
 							</h3>
 						</div>
 					</div>
+					<ProductModal
+						modalStatus={modalStatus}
+						modalStatusHandler={modalStatusHandler}
+						productType={productType}
+						setProductType={setProductType}
+					/>
 				</div>
 			</section>
 		</>
