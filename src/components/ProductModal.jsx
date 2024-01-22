@@ -45,9 +45,10 @@ export default function ProductModal({
 										come to life.
 									</p>
 									<ul className='text-base mt-5 italic'>
-										<li>Build time: 60-90 days</li>
+										<li>Build time: 4-6 weeks depending on complexity</li>
 										<li>Lumber of your choice</li>
 										<li>Weekly Progress updates</li>
+										<li>Price on request</li>
 									</ul>
 								</div>
 								<div className='col-span-2 p-5'>
@@ -77,10 +78,10 @@ export default function ProductModal({
 										to make something special.
 									</p>
 									<ul className='text-base mt-5 italic'>
-										<li>Build time: 1-3 weeks</li>
+										<li>Build time: 2-3 days </li>
 										<li>Lumber of your choice</li>
 										<li>Design Consultation included</li>
-										<li></li>
+										<li>Price on request</li>
 									</ul>
 								</div>
 								<div className='col-span-2 p-5'>
@@ -107,16 +108,24 @@ export default function ProductModal({
 										Bed Frames
 									</h2>
 									<p>
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-										Cupiditate harum quisquam hic voluptatum at eius, commodi
-										dicta. Eligendi rem adipisci eveniet quas ad cupiditate ea
-										facilis quasi dolorum, quae accusamus.
+										Available in a variety of styles and sizes, let's work on a
+										perfect centerpiece for your bedroom. I have worked to
+										develop a CNC pattern for a sturdy, stylish, and simple
+										bedframe. Perfect for easy set up, unobtusive presence in
+										your space, and easy to take apart for a move.
 									</p>
-									<ul className='text-base mt-5 italic'>
-										<li>Build time: 30-60 days</li>
+									<p className='my-5'>
+										If looking for something more personalized, a custom
+										bedframe solutions will be perfect for you. With a variety
+										of lumber choices and infinite design options, this is the
+										perfect way to make your bedroom your own.
+									</p>
+									<ul className='text-base  italic'>
+										<li>CNC Build time: 1-2 weeks</li>
+										<li>Custom Build time: 30-60 days</li>
 										<li>Variety of lumber choices</li>
 										<li>Design Consultation included</li>
-										<li></li>
+										<li>Price on request</li>
 									</ul>
 								</div>
 								<div className='col-span-2 p-5'>
@@ -139,12 +148,15 @@ export default function ProductModal({
 									<h2 className='text-stone-700 text-2xl my-5 whitespace-nowrap'>
 										Shelves
 									</h2>
-									<p>Handcrafted and made to order,</p>
+									<p>
+										Handcrafted and made to order, available in everything from
+										stand alone floating shelves to full shelving units.
+									</p>
 									<ul className='text-base mt-5 italic'>
-										<li>Build time: 30 days</li>
+										<li>Build time: 1-2 days</li>
 										<li>Variety of lumber choices</li>
-										<li>Design Consultation included</li>
-										<li></li>
+										<li>Installation available at a cost for local clients</li>
+										<li>Price on request</li>
 									</ul>
 								</div>
 								<div className='col-span-2 p-5'>
@@ -168,16 +180,16 @@ export default function ProductModal({
 										Record Holders
 									</h2>
 									<p>
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-										Cupiditate harum quisquam hic voluptatum at eius, commodi
-										dicta. Eligendi rem adipisci eveniet quas ad cupiditate ea
-										facilis quasi dolorum, quae accusamus.
+										Why leave all your vintage vinyl in a box in the attic? With
+										these custom record holders you can display your collection
+										in style. Available in a variety of sizes and styles,
+										integrate your music taste into the design of your home.
 									</p>
-									<ul cclassName='text-base mt-5 italic'>
-										<li>Build time: 30-60 days</li>
+									<ul className='text-base mt-5 italic'>
+										<li>Build time: 1-2 days</li>
 										<li>Variety of lumber choices</li>
-										<li>Design Consultation included</li>
-										<li></li>
+										<li>Installation available at a cost for local clients</li>
+										<li>Price on request</li>
 									</ul>
 								</div>
 								<div className='col-span-2 p-5'>
@@ -206,16 +218,16 @@ export default function ProductModal({
 										Build Outs
 									</h2>
 									<p>
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-										Cupiditate harum quisquam hic voluptatum at eius, commodi
-										dicta. Eligendi rem adipisci eveniet quas ad cupiditate ea
-										facilis quasi dolorum, quae accusamus.
+										Looking to make your sprinter van or truck bed a home or the
+										ultimate weekender? Together we can architect a custom build
+										out to fit your needs. From custom cabinetry to functional
+										storage and stow away beds, if you dream it I can build it.
 									</p>
 									<ul className='text-base mt-5 italic'>
-										<li>Build time: 30-60 days</li>
+										<li>Build time: Heavily dependent on complexity</li>
 										<li>Variety of lumber choices</li>
 										<li>Design Consultation included</li>
-										<li></li>
+										<li>Price on request</li>
 									</ul>
 								</div>
 								<div className='col-span-2 p-5'>
