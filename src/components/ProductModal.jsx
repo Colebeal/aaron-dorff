@@ -17,24 +17,20 @@ export default function ProductModal({
 						transition={{ duration: 0.5 }}
 						id='backdrop'
 						onClick={modalStatusHandler}
-						className='z-20 rounded-lg w-full h-full absolute bg-[#ece3d4] xl:bg-stone-100 top-0 left-0 right-0'
+						className='z-20 rounded-lg w-full h-full absolute bg-[#ece3d4] top-0 left-0 right-0'
 					>
-						<AiOutlineClose
-							className='hidden xl:block cursor-pointer z-40 xl:m-5 absolute top-0 left-0 text-4xl text-stone-500'
-							onClick={modalStatusHandler}
-						/>
 					</m.div>
 					<m.section
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0 }}
 						transition={{ duration: 0.5 }}
-						className='z-30 absolute xl:top-24 bg-white xl:w-[900px] xl:min-h-[70svh] inset-x-0 left-0 right-0 m-auto rounded-lg xl:grid grid-cols-4 gap-4 p-5 text-left'
+						className='z-30 absolute xl:top-24 bg-white xl:w-[900px] xl:min-h-[70svh] inset-x-0 left-0 right-0 m-auto rounded-lg xl:grid grid-cols-4 gap-4 p-10 lg:py-16 lg:px-20 text-left'
 					>
 						{productType == 'table' && (
 							<>
 								<AiOutlineClose
-									className='xl:hidden absolute cursor-pointer z-40 m-7 top-0 right-0 text-5xl text-white'
+									className='absolute top-0 right-0 cursor-pointer z-40 m-12 text-4xl text-white lg:left-0 lg:m-5 lg:text-orange-300 '
 									onClick={modalStatusHandler}
 								/>
 								<div className="rounded-lg row-span-3 col-span-2 bg-[url('/image/Dorff-Table-07.jpg')] bg-cover bg-no-repeat min-h-[40svh]"></div>
@@ -63,7 +59,7 @@ export default function ProductModal({
 						{productType == 'cut' && (
 							<>
 								<AiOutlineClose
-									className='xl:hidden absolute cursor-pointer z-40 m-7 top-0 right-0 text-5xl text-white'
+									className='absolute top-0 right-0 cursor-pointer z-40 m-12 text-4xl text-white lg:left-0 lg:m-5 lg:text-orange-300 '
 									onClick={modalStatusHandler}
 								/>
 								<div className="rounded-lg row-span-3 col-span-2 bg-[url('/image/Dorff-Board.jpg')] bg-cover bg-center min-h-[40svh]"></div>
@@ -96,7 +92,7 @@ export default function ProductModal({
 						{productType == 'bed' && (
 							<>
 								<AiOutlineClose
-									className='xl:hidden absolute cursor-pointer z-40 m-7 top-0 right-0 text-5xl text-white'
+									className='absolute top-0 right-0 cursor-pointer z-40 m-12 text-4xl text-white lg:left-0 lg:m-5 lg:text-orange-300 '
 									onClick={modalStatusHandler}
 								/>
 								<div className='flex flex-col row-span-3 col-span-2 gap-5'>
@@ -140,7 +136,7 @@ export default function ProductModal({
 						{productType == 'shelf' && (
 							<>
 								<AiOutlineClose
-									className='xl:hidden absolute cursor-pointer z-40 m-7 top-0 right-0 text-5xl text-white'
+									className='absolute top-0 right-0 cursor-pointer z-40 m-12 text-4xl text-white lg:left-0 lg:m-5 lg:text-orange-300 '
 									onClick={modalStatusHandler}
 								/>
 								<div className="rounded-lg row-span-3 col-span-2 bg-[url('/image/Dorff-Craft-04.jpg')] bg-cover bg-center min-h-[40svh]"></div>
@@ -171,7 +167,7 @@ export default function ProductModal({
 						{productType == 'record' && (
 							<>
 								<AiOutlineClose
-									className='xl:hidden absolute cursor-pointer z-40 m-7 top-0 right-0 text-5xl text-white'
+									className='absolute top-0 right-0 cursor-pointer z-40 m-12 text-4xl text-white lg:left-0 lg:m-5 lg:text-orange-300 '
 									onClick={modalStatusHandler}
 								/>
 								<div className="rounded-lg row-span-3 col-span-2 bg-[url('/image/Dorff-Craft-06.jpg')] min-h-[40svh] bg-cover bg-center"></div>
@@ -204,7 +200,7 @@ export default function ProductModal({
 						{productType == 'build' && (
 							<>
 								<AiOutlineClose
-									className='xl:hidden absolute cursor-pointer z-40 m-7 top-0 right-0 text-5xl text-white'
+									className='absolute top-0 right-0 cursor-pointer z-40 m-12 text-4xl text-white lg:left-0 lg:m-5 lg:text-orange-300 '
 									onClick={modalStatusHandler}
 								/>
 								<div className='grid grid-cols-2 row-span-3 col-span-2 gap-5'>
